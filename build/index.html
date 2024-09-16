@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
 </head>
-<body class="bg">
+<body class="bg" flex justify-center>
     <nav>
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-white text-2xl font-bold">
@@ -22,7 +22,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="flex-grow flex items-center justify-center text-center">
         <div class="min-h-screen grid place-content-center">
             <div p-6>
                 <h1 class="text-6xl text-align font-bold text-white roboto-font">
@@ -37,7 +37,16 @@
                     or restart your membership
                 </h1>
             </div>
-            <div class="email"></div>
+            <div class="email">
+                <div class="w-full max-w-md p-6 rounded-lg shadow-lg">
+                    <div class="flex">
+                        <input type="email" placeholder="Email Address" class="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <button class="px-4 py-2 bg-red-600 text-white rounded-r-l focus:outline-none focus:ring-2">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
