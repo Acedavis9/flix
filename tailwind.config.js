@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: ['./build/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-red': '#e50914',
+        'custom-red-dark': '#c8102e', // A darker shade of red
+      },
+    },
   },
   plugins: [],
 }
+
 
